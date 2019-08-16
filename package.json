@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "api restfull con nodejs y express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ysidro Fernandez Software Developer",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.24.0",
+    "mongodb": "^3.3.0-beta2",
+    "mongoose": "^5.6.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
