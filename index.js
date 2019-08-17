@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const app = require('./app')
 const config = require('./config')
 
-mongoose.connect(config.db,
+mongoose.connect(config.DB_URI,
     {
         useNewUrlParser: true,
         useCreateIndex: true,
@@ -15,7 +15,7 @@ mongoose.connect(config.db,
         }
 
         console.log("conexión establecida")
-        app.listen(config.port, () => {
-            console.log(`API CORRIENDO en http://localhost:${config.port}`)
+        app.listen(config.PORT, () => {
+            console.log(`API CORRIENDO en http://localhost:${config.PORT}`)
         })
     })
