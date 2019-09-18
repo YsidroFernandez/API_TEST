@@ -17,15 +17,14 @@ function saveProduct(req, resp) {
 
 
     let product = new Product()
-    product.name = req.body.name
-    product.description = req.body.description
-    product.stack = req.body.stack
+    product.type = req.body.type
+    product.models = req.body.models
 
 
     product.save((err, productStored) => {
         if (err) resp.status(500).send({ message: `Error al Guardar en la DB ${err}` })
 
-        resp.status(200).send({ product: productStored })
+        resp.status(200).send({status: 'Ok', product: productStored })
     })
 }
 

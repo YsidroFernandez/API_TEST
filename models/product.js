@@ -5,9 +5,8 @@ const Schema = mongoose.Schema
 
 const ProductSchema = Schema(
   {
-    name : String,
-    description : String,
-    stack : { 
+    type : String,
+    models : { 
     	type : Array,
     	default: []
     }
